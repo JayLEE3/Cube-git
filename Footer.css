@@ -1,57 +1,32 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: pretendard;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
+body { margin: 0; padding: 0; font-family: pretendard; font-weight: 300;
+  line-height: 1.5;}
 a, a:hover, a:focus, a:active{text-decoration: none;color: inherit}
-a, button, input, textarea {
-  transition: border-color .4s, background .4s, color .4s, opacity .4s, box-shadow .4s;
-}
-li {
-  list-style: none;
-}
+a, button, input, textarea { transition: border-color .4s, background .4s, color .4s, opacity .4s, box-shadow .4s; }
+li { list-style: none; }
 
 
 
 
 /* 푸터 슬라이더 *//* 푸터 슬라이더 */
-.slide-img {
-  width: 240px;
-  height: auto;
-  animation: scroll 60s linear infinite;
+.slide-img {width: 240px; height: auto; animation: scroll 60s linear infinite;
 }
+.slide-track { width: 100%; display: flex; gap: 3em; overflow: hidden; }
+.slider { margin-top: 0; padding:0; }
 
-.slide-track {
-  width: 100%;
-  display: flex;
-  gap: 3em;
-  overflow: hidden;
-}
-
-.slider {
-  margin-top: 0;
-  padding:0;
-}
-
-@keyframes scroll {
-  0% {transform: translateX(0);}
-  100% {transform: translatex(-300%)}
-}
-
+@keyframes scroll { 0% {transform: translateX(0);} 100% {transform: translatex(-300%)}}
 /* 푸터 슬라이더 *//* 푸터 슬라이더 */
 
 
 
 
 /* Footer */
-.ft-top{position: relative;background: #fff;color: #000;padding: 1rem 0;font-size: .8rem; border-bottom: 1px solid #e5e5e5;}
-.ft-top{padding: 1.5rem 0}
-.ft-top .dropdown-menu{max-height: 200px;overflow-y: auto}
-.ft-top .container{display: flex; align-items: center}
-.ft-top .container{flex-wrap: wrap;     justify-content: space-around;}
+.ft-top{color: #000; padding: 0 0 1.5rem; font-size: .8rem; border-bottom: 1px solid #e5e5e5;}
+.ft-top .container{ display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.right-etc { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+flex-wrap: wrap;}
 .icon {
   display: inline-block;
   overflow: hidden;
@@ -73,6 +48,7 @@ li {
 }
 .icon-top{position: absolute;}
 .sns-list {  margin-left: auto;}
+.sns-list, .dropdown {display:flex; align-items: center;} 
 .sns-list .icon{width: 2.5rem;height: 2.5rem;margin-right: 1.2rem }
 .sns-list .icon{width: 24px; height: 24px}
 .icon-sns-face{background-image: url(./image/sns05.png)}
@@ -84,7 +60,6 @@ li {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -92,16 +67,13 @@ li {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-toggle{border: 1px solid #535353;font-size: .7rem;color: #000;padding: .5rem .9rem;border-radius: 2rem;width: 8rem;display: flex;align-items: center;justify-content: space-between;white-space: nowrap; width:128px;}
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown-toggle{width:auto; border: 1px solid #535353;font-size: .7rem;color: #000;padding: .5rem .9rem;border-radius: 2rem;width: 8rem;display: flex;align-items: center;justify-content: space-between;white-space: nowrap; width:128px;}
 .dropdown-content{min-width: 0;width: 128px;border-radius: .5rem;font-size: .7rem;padding: 0}
 .dropdown-content>a{display: block;padding: .5rem .9rem}
 .dropdown-content>a:hover{background: #F5F8FD}
 #ft {display: block; flex-wrap: wrap; gap: 1.5rem; box-sizing: border-box; max-width: 1200px; margin: 0 auto;}
-#ft>.container{padding: 2rem 0;display: block;text-align: center}
+#ft>.container{padding: 2rem 0;display: block; text-align: center}
 .container {
   width: 100%;
     padding-right: 15px;
@@ -117,9 +89,11 @@ li {
 .ft-info>span+span{padding-left: 1.2rem;position: relative;}
 .ft-info>span+span::before{content: '';position: absolute;left: .6rem;height: .6rem;top: 50%;margin-top: -.3rem;border-left: 1px solid #ccc}
 .copy{font-size: .75rem;opacity: .5;font-family: var(--font-family-poppins);letter-spacing: 0;flex-shrink: 0}
-.fnb{width: 100%;display: flex;flex-wrap: wrap;justify-content: center;font-size: .9rem;padding-bottom: 0;margin-bottom: 0;border-bottom: 1px solid rgba(255,255,255,.1)}
+.fnb, .sns-list, .dropdown {
+  width: 100%;
+  text-align: center;
+}
 .fnb a{margin: .3em .7em}
-.ft-top .dropdown{/*margin-left: auto*/}
 .ft-logo{width: 10rem}
 .ft-btm{display: block}
 .d-flex {
@@ -131,49 +105,46 @@ li {
 /*모바일*/
 @media screen and (max-width: 767px) {
 .ft-top{padding: 1.5rem 0}
-.ft-top .container{flex-wrap: wrap; justify-content: space-around;}
-.fnb, .sns-list, .dropdown {
-  width: auto;
-  text-align: center;
-}
+.ft-top .container{ display: block;}
+.fnb, .sns-list, .dropdown { width: 100%; }
 .fnb a{margin: .3em .7em}
-.ft-top .dropdown{margin-left: 0; justify-content: space-between;}
-.dropdown-toggle { width: auto; }
-.sns-list .icon{width: 24px;height: 24px}
-#ft>.container{padding-top: 2.5rem;padding-bottom: 2.5rem;display: block;text-align: center;}
+.ft-top .dropdown{justify-content: space-between;}
+.dropdown-toggle { width: 128px; }
+.sns-list{ margin:16px 0;padding:0; float:left;}
+.sns-list .icon{width: 24px;height: 24px; }
+.sns-list, .dropdown { width: 100%; text-align: center;}
 .ft-logo{width: 10rem}
 .ft-btm{display: block;}
 .ft-info{justify-content: center;font-size: .9rem;margin: .5em 0 1em}
-.copy{font-size: .85rem}
+.copy{    text-align:center; font-size: .85rem}
 .floating{width: 4rem;height: 4rem;font-size: .7rem;right: 10px;bottom: 10px}
+.right-etc {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 }
 
 
 
 
 
-/* PC 화면에 대한 스타일 */
+/* PC */
 @media screen and (min-width: 768px) {
-.fnb, .sns-list, .dropdown {
-    width: auto; 
+  .fnb,
+  .sns-list,
+  .dropdown {
+    width: auto;
     text-align: center;
-    margin-left: auto;
+    margin-left: 0;
 }
-.dropdown-toggle { width: auto; }
+.dropdown-toggle { width: 128px; }
 .dropdown-menu { text-align: left; }
 
 /* 슬라이더 */
 .slider { margin-top: 0;}
 }
 
-
-/*--PC--*/
-@media screen and (min-width: 768px) {
-  .fnb,  .sns-list,  .dropdown {
-    width: auto;
-    text-align: center;
-    /*margin-left: auto;*/
-  }
-  .dropdown-toggle { width: 128px; }
-  .dropdown-menu { text-align: left; }
-}
