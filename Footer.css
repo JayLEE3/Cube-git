@@ -77,6 +77,8 @@ li { list-style: none; }
   width: 24px; 
   height: 24px
 }
+.custom-top-content { margin-top: 1.5rem; }
+.custom-top-content .btn{ padding: .6rem 1rem; }
 .icon-sns-face {
   background-image: url(./image/sns05.png)
 }
@@ -90,6 +92,7 @@ li { list-style: none; }
 }
 .icon-sns-twitter { background-image: url(./image/sns02.png)
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -219,6 +222,28 @@ li { list-style: none; }
 .d-flex {
   display: -ms-flexbox!important;
   display: flex!important;
+}
+
+#backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  top: 90%;
+  transform: translate(0, -50%);
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 24px;
+  background-size: contain;
+  background-image: url('./image/chevron-up.svg'); 
+  background-repeat: no-repeat;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#backtotop:hover {
+
 }
 
 
