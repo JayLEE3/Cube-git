@@ -241,7 +241,7 @@ li { list-style: none; }
   cursor: pointer;
   padding: 24px;
   background-size: contain;
-  background-image: url('./image/chevron-up.svg'); 
+  background-image: url('./image/chevron-up.png'); 
   background-repeat: no-repeat;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
