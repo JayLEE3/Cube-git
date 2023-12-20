@@ -90,25 +90,25 @@
     </div>
 </div>
 <!-- Back to Top -->
-<button onclick="topFunction()" id="backtotop" title="Go to top"></button>
+<a id="button"></a>
 <script>
-  let mybutton = document.getElementById("backtotop");
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (window.scrollY > 20) {
-      mybutton.style.display = "block";
+var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
     } else {
-      mybutton.style.display = "none";
+      btn.removeClass('show');
     }
-  }
+  });
   
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-  </footer>
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+  
+  </script>
+</footer>
 
 
 
