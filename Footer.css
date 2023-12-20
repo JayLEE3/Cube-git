@@ -230,7 +230,7 @@ li { list-style: none; }
   right: 30px;
   top: 90%;
   transform: translate(0, -50%);
-  z-index: 99;
+  z-index: 999;
   font-size: 18px;
   border: none;
   border-radius: 100%;
@@ -239,7 +239,7 @@ li { list-style: none; }
   background-size: contain;
   background-image: url('./image/chevron-up.svg'); 
   background-repeat: no-repeat;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 #backtotop:hover {
