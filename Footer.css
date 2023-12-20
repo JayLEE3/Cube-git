@@ -11,7 +11,11 @@ li { list-style: none; }
 .slide-img {width: 240px; height: auto; animation: scroll 60s linear infinite;
 }
 .slide-track { width: 100%; display: flex; gap: 3em; overflow: hidden; }
-.slider { margin-top: 0; padding:0; }
+.slider { 
+  margin: 0 auto; 
+  padding:0; 
+  width: 1200px;
+}
 
 @keyframes scroll { 0% {transform: translateX(0);} 100% {transform: translatex(-300%)}}
 /* 푸터 슬라이더 *//* 푸터 슬라이더 */
