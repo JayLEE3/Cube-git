@@ -84,17 +84,17 @@ li { list-style: none; }
 .custom-top-content { margin-top: 1.5rem; }
 .custom-top-content .btn{ padding: .6rem 1rem; }
 .icon-sns-face {
-  background-image: url(./image/sns05.png)
+  background-image: url('./image/sns05.png');
 }
 .icon-sns-kakaoch {
-  background-image: url(./image/sns03.png) 
+  background-image: url('./image/sns03.png'); 
 }
 .icon-sns-insta {
-  background-image: url(./image/sns01.png)
+  background-image: url('./image/sns01.png');
 }
-.icon-sns-blog { background-image: url(./image/sns04.png)
+.icon-sns-blog { background-image: url('./image/sns04.png');
 }
-.icon-sns-twitter { background-image: url(./image/sns02.png)
+.icon-sns-twitter { background-image: url('./image/sns02.png');
 }
 
 .dropdown {
@@ -200,7 +200,7 @@ li { list-style: none; }
 .copy { 
   font-size: .75rem;
   opacity: .5;
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-pretendard);
   letter-spacing: 0;
   flex-shrink: 0;
 }
@@ -235,7 +235,6 @@ li { list-style: none; }
   top: 90%;
   transform: translate(0, -50%);
   z-index: 999;
-  font-size: 18px;
   border: none;
   border-radius: 100%;
   cursor: pointer;
