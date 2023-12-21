@@ -84,17 +84,17 @@ li { list-style: none; }
 .custom-top-content { margin-top: 1.5rem; }
 .custom-top-content .btn{ padding: .6rem 1rem; }
 .icon-sns-face {
-  background-image: url('../Image/sns05.png');
+  background-image: url('./Image/sns05.png');
 }
 .icon-sns-kakaoch {
-  background-image: url('../Image/sns03.png'); 
+  background-image: url('./Image/sns03.png'); 
 }
 .icon-sns-insta {
-  background-image: url('../Image/sns01.png');
+  background-image: url('./Image/sns01.png');
 }
-.icon-sns-blog { background-image: url('../Image/sns04.png');
+.icon-sns-blog { background-image: url('./Image/sns04.png');
 }
-.icon-sns-twitter { background-image: url('../Image/sns02.png');
+.icon-sns-twitter { background-image: url('./Image/sns02.png');
 }
 
 .dropdown {
